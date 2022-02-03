@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.3"
     
 services:
   db:
@@ -26,3 +26,6 @@ services:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_HOME', 'https://wordpress.memery.app');
+        define('WP_SITEURL', 'https://wordpress.memery.app');
